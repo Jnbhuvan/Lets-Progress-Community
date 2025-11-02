@@ -45,7 +45,7 @@ const About: React.FC = () => {
           <div className={`order-1 md:order-2 ${isVisible ? 'reveal-right visible' : 'reveal-right'}`}>
             <div className="p-1 border border-gray-800 rounded-sm hover:border-[var(--accent-color)] transition-colors duration-500">
                 <img 
-                  src="https://images.unsplash.com/photo-1589824783837-29d3562a4b69?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                  src="https://i.pinimg.com/474x/70/f8/f2/70f8f2db9605102930a393e4b6efcd06.jpg?nii=t" 
                   alt="Philosophy" 
                   className="rounded-sm shadow-2xl shadow-black/50 w-full h-auto object-cover"
                 />
