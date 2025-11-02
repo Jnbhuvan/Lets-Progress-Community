@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LETS PROGRESS COMMUNITY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #0a0a0a;
+        --text-color: #c7c7c7;
+        --accent-color: #a87d44; /* Muted Bronze/Gold */
+        --border-color: rgba(255, 255, 255, 0.1);
+      }
+      body {
+        font-family: 'Roboto Slab', serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.15em;
+        font-weight: 400;
+      }
+      .text-shadow-soft {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Faint Smoke/Mist Effect */
+      .mist-overlay {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd25jbDN6eXY0bW10amR0ZzZpZnJqZHJ6Z3BscXJtY3RxaG5keGJtYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btS81aQw2dKzZMQ/giphy.gif') center/cover;
+        opacity: 0.03;
+        animation: slow-pan 80s linear infinite;
+        z-index: 1;
+      }
+
+      @keyframes slow-pan {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      /* Hero Title Spotlight Effect */
+      .title-spotlight {
+        color: #e0e0e0;
+        animation: title-glow 5s ease-in-out infinite alternate;
+      }
+      
+      @keyframes title-glow {
+        from {
+          text-shadow: 0 0 10px #333, 0 0 20px #333, 0 0 30px #444;
+        }
+        to {
+          text-shadow: 0 0 20px #444, 0 0 30px #555, 0 0 40px #555;
+        }
+      }
+      
+      /* Dark Knight Button */
+      .dark-knight-button {
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+        transition: all 0.4s ease;
+        box-shadow: 0 0 5px rgba(168, 125, 68, 0.2);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      .dark-knight-button:hover {
+        color: #fff;
+        background-color: var(--accent-color);
+        box-shadow: 0 0 15px rgba(168, 125, 68, 0.5), inset 0 0 10px rgba(0,0,0,0.4);
+        transform: translateY(-2px);
+      }
+
+      /* Scroll Reveal Animations */
+      .reveal {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+      }
+      .reveal-left {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+      }
+      .reveal-right {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+      }
+       .reveal-zoom {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+
+      .reveal.visible,
+      .reveal-left.visible,
+      .reveal-right.visible,
+      .reveal-zoom.visible {
+        opacity: 1;
+        transform: translate(0) scale(1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
