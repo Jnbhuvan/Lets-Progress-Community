@@ -5,9 +5,7 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-sm border-b border-[var(--border-color)]">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-2xl md:text-3xl font-bold text-white tracking-wider"
-           style={{
-    textShadow: '0 0 5px #fff, 0 0 10px #00f6ff, 0 0 20px #00f6ff, 0 0 40px #00f6ff',
-  }}>
+          
           Lets Progress Community
         </h1>
         <nav className="hidden md:flex space-x-10">
