@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         ref={parallaxRef}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1533109721025-d1ae7de13383?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/023/977/563/large_2x/front-view-dark-silhouette-of-a-modern-sport-black-car-isolated-on-black-background-ai-generated-free-photo.jpg')",
         }}
       ></div>
       <div className="bg-black/85 absolute inset-0 z-0"></div>
