@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const members = [
     { name: 'Harsha R', image: 'https://tse4.mm.bing.net/th/id/OIP.-5B5mkBaqTcevF6d3ZSDQwAAAA?pid=ImgDet&w=185&h=330&c=7&dpr=1.1&o=7&rm=3' },
     { name: 'Adithya Maiya B', image: 'https://tse2.mm.bing.net/th/id/OIP.EHo_9rC__d7l1f9H0g1TOwHaM9?pid=ImgDet&w=185&h=323&c=7&dpr=1.1&o=7&rm=3' },
-    { name: 'Bhuvan J N', image: 'https://tse1.mm.bing.net/th/id/OIP.yEfwfeH2W1XIFqqYzcUEcQHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Jainag Bhuvan', image: 'https://tse1.mm.bing.net/th/id/OIP.yEfwfeH2W1XIFqqYzcUEcQHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
     { name: 'Chiranth kumar J', image: 'https://tse3.mm.bing.net/th/id/OIP.1PH6Agr9BCUH1PjQNR6-jgHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.1&o=7&rm=3' },
     { name: 'Charan k The Chirathe', image: 'https://tse3.mm.bing.net/th/id/OIP.Kpm3p2p-zpuHpWF9WO4n7QHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
     { name: 'Kishore H P', image: 'https://tse2.mm.bing.net/th/id/OIP.TnwtTu8_5OQ_6dSZt8VRWAHaKa?pid=ImgDet&w=185&h=260&c=7&dpr=1.1&o=7&rm=3' },
