@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const members = [
-    { name: 'Harsha R', image: 'https://i.pinimg.com/564x/8e/98/8c/8e988c8e87413c2337e7a835b45f78ac.jpg' },
-    { name: 'Adithya Maiya B', image: 'https://i.pinimg.com/564x/0f/37/d5/0f37d53063f4857bafa1e94a8f401cb1.jpg' },
-    { name: 'Bhuvan J N', image: 'https://i.pinimg.com/564x/f3/9d/54/f39d54972f103a8fcf1f582f153a5513.jpg' },
-    { name: 'Chiranth kumar J', image: 'https://i.pinimg.com/564x/6c/e0/75/6ce07550247610f76326e0b78486a4e3.jpg' },
-    { name: 'Charan k The Chirathe', image: 'https://i.pinimg.com/564x/3b/b1/7d/3bb17d5c9c9e8a04b1f6a1b241416999.jpg' },
-    { name: 'Kishore H P', image: 'https://i.pinimg.com/564x/e7/7b/39/e77b39b50b73c09b8130833b763f0d4b.jpg' },
-    { name: 'Madan R', image: 'https://i.pinimg.com/564x/51/79/61/517961b7f2f1c841e537c77c68b7501a.jpg' },
-    { name: 'Manoj', image: 'https://i.pinimg.com/564x/c0/8e/a4/c08ea4379e46951b1432a58b4a11f2d6.jpg' },
+    { name: 'Harsha R', image: 'https://tse4.mm.bing.net/th/id/OIP.-5B5mkBaqTcevF6d3ZSDQwAAAA?pid=ImgDet&w=185&h=330&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Adithya Maiya B', image: 'https://tse2.mm.bing.net/th/id/OIP.EHo_9rC__d7l1f9H0g1TOwHaM9?pid=ImgDet&w=185&h=323&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Bhuvan J N', image: 'https://tse1.mm.bing.net/th/id/OIP.yEfwfeH2W1XIFqqYzcUEcQHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Chiranth kumar J', image: 'https://tse3.mm.bing.net/th/id/OIP.1PH6Agr9BCUH1PjQNR6-jgHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Charan k The Chirathe', image: 'https://tse3.mm.bing.net/th/id/OIP.Kpm3p2p-zpuHpWF9WO4n7QHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Kishore H P', image: 'https://tse2.mm.bing.net/th/id/OIP.TnwtTu8_5OQ_6dSZt8VRWAHaKa?pid=ImgDet&w=185&h=260&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Madan R', image: 'https://tse2.mm.bing.net/th/id/OIP.Yn409q9FkxFm49EH_n19jgHaLH?pid=ImgDet&w=185&h=277&c=7&dpr=1.1&o=7&rm=3' },
+    { name: 'Manoj', image: 'https://tse4.mm.bing.net/th/id/OIP.kFCM6BtE7TbkKwpp0d2IkQHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3' },
+    { name: 'You Be the Next', image: 'https://i.pinimg.com/736x/14/d1/12/14d1128a7224f7405715302b7259b51f.jpg' },
 ];
 
 const MemberCard: React.FC<{ name: string; image: string; isVisible: boolean; index: number; }> = ({ name, image, isVisible, index }) => (
